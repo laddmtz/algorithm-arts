@@ -1,0 +1,79 @@
+/* Styles généraux */
+#packs {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#packs h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Conteneur des packs */
+.packs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Chaque pack */
+.pack {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pack:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Titres packs */
+.pack h3 {
+    margin-bottom: 15px;
+}
+
+/* Différenciation des packs par couleur */
+.pack.starter h3 { color: #1e90ff; }
+.pack.business h3 { color: #32cd32; }
+.pack.premium h3 { color: #ff8c00; }
+
+/* Listes */
+.pack ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Prix et cible */
+.pack p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Bouton Acheter (optionnel) */
+.pack button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.pack.starter button { background: #1e90ff; color: white; }
+.pack.business button { background: #32cd32; color: white; }
+.pack.premium button { background: #ff8c00; color: white; }
+
+.pack button:hover {
+    opacity: 0.9;
+}
